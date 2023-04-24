@@ -13,8 +13,8 @@ const Header = () => {
         </h2>
       </div>
       <div className='text-center'>
-        Masz pytania? Zadzwoń: <br/>
-        +48 727 912 364
+        Masz pytania? Napisz: <br/>
+        adamczyk29a@interia.pl
       </div>
       </div>
     </div>

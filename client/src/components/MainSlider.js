@@ -23,7 +23,7 @@ const sliderData = [
     pretitle: "Na prezent",
     title1: "Konkurencyjne",
     title2: "Ceny",
-    btnText: "",
+    btnText: "Zamów",
   },
   {
     img: sliderimg3,
@@ -31,7 +31,7 @@ const sliderData = [
     title1: "title1",
     title2: "title2",
     title3: "title3",
-    btnText: "btnText",
+    btnText: "Zobacz",
     },
 ]
 

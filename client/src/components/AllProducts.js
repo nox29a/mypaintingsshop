@@ -11,6 +11,8 @@ import Product from './Product';
 
 const AllProducts = () => {
   const { data } = useFetch('/obrazies?populate=*');
+  
+  
   return (
     <div className='mt-40'>
       <h2 className='text-[40px] mb-6 text-center'>Wszystkie obrazy</h2>

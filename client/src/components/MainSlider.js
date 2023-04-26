@@ -53,15 +53,15 @@ const MainSlider = () => {
     <>
       {sliderData.map((slide, index) => {
       return <SwiperSlide key={index}>
-        <div className='flex flex-col h-full justify-center'>
+          <div className='flex flex-col h-full justify-center'>
             <div className='text-[40px] uppercase font-medium pl-10'>
-            {slide.pretitle} <br/>
-          </div>
+              {slide.pretitle} <br/>
+            </div>
             <div className='text-[13px] uppercase font-medium my-4 pl-10'>
-            {slide.title1} <br/>
-            {slide.title2} 
-          </div>
-          </div>
+              {slide.title1} <br/>
+              {slide.title2} 
+            </div>
+         </div>
           <div className='flex justify-center h-[350px]'>
             <img className='h-[400px] absolute z-20 top-4 right-10' src={slide.img} alt=''></img>
           </div>

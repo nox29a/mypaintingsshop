@@ -1,7 +1,5 @@
 import React from 'react';
 import useFetch from '../hooks/useFetch';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,7 +10,6 @@ import Product from './Product';
 const AllProducts = () => {
   const { data } = useFetch('/obrazies?populate=*');
   
-  
   return (
     <div className='mt-40'>
       <h2 className='text-[40px] mb-6 text-center'>Wszystkie obrazy</h2>
@@ -21,9 +18,10 @@ const AllProducts = () => {
             return (
                 <div className='container mx-auto w-auto'>
                   <div className='w-[350px] h-[350px] '>
-              <Product product={product} />
-              </div></div>
-            )
+                    <Product product={product} />
+                  </div>
+                </div>
+           )
           })}
         </div>
     </div>

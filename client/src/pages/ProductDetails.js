@@ -15,12 +15,12 @@ const ProductDetails = () => {
   }
   
   const {title, price, description, paint, avalible} = data[0].attributes
-  
+  console.log(paint)
   return (
     <div className='container mx-auto'>
       <div className='flex flex-row my-10'>
         <div className='w-1/2 '>
-          <img className='w-full h-auto' src={`http://localhost:1337${paint.data[0].attributes.url}`} alt="" />
+          <img className='w-full h-auto' src={`https://api-8xi3.onrender.com${paint.data[0].attributes.url}`} alt="" />
         </div>
         <div className='w-1/2 items-center text-center'>
         <div className='mt-10 h-1/2 text-lg'>

@@ -12,7 +12,7 @@ const ForSale = () => {
   <div className='my-16'>
     <div className='container mx-auto'>
       <h2 className='h2 mb-6 text-center'>Nadal na sprzedaż!</h2>
-      <ProductSlider data={data} />
+        <ProductSlider data={data} />
     </div>
   </div>
   );

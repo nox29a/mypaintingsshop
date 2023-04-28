@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Order = () => {
-  
+
+
   return (
   <section>
-    <div>Zamówienie:</div>
+    <div>Zamówienie:
+    </div>
   </section>
   );
 };

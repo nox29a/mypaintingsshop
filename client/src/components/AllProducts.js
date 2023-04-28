@@ -11,7 +11,8 @@ const AllProducts = () => {
   const { data } = useFetch('/obrazies?populate=*');
   
   return (
-    <div className='mt-40'>
+    
+    <div id='Allproducts' className='mt-40'>
       <h2 className='text-[40px] mb-6 text-center'>Wszystkie obrazy</h2>
         <div className='flex flex-wrap '>
           {data?.map((product) => {

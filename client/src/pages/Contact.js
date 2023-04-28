@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <div className='container mx-auto my-10'>
-
+      <h2 className='text-[50px] text-center mb-16'> Formularz kontaktowy:</h2>
         <form onSubmit={handleSubmit}>
           <div className='flex justify-center'>
           <div>

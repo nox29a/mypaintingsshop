@@ -17,6 +17,7 @@ const sliderData = [
     title1: "10% zniżki",
     title2: "do pierwszego zamówienia",
     btnText: "Zamów",
+    move: "Contact"
   },
   {
     img: sliderimg2,
@@ -24,14 +25,15 @@ const sliderData = [
     title1: "Konkurencyjne",
     title2: "Ceny",
     btnText: "Zamów",
+    move: "Contact"
   },
   {
     img: sliderimg3,
-    pretitle: "",
-    title1: "title1",
-    title2: "title2",
-    title3: "title3",
+    pretitle: "Własne prace",
+    title1: "zobacz",
+    title2: "pełną galerię",
     btnText: "Zobacz",
+    move: "#Allproducts"
     },
 ]
 
@@ -66,7 +68,7 @@ const MainSlider = () => {
             <img className='h-[400px] absolute z-20 top-4 right-10' src={slide.img} alt=''></img>
           </div>
           <div className='flex btn btn-accent z-30 w-40 absolute bottom-10 left-10'>
-            <button>{slide.btnText}</button>
+          <a href={slide.move}><button>{slide.btnText}</button></a>
           </div>
       </SwiperSlide>
       })}

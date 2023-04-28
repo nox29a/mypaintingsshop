@@ -11,7 +11,7 @@ const Product = ({product}) => {
     <div className='absolute bg-yellow-300 text-primary text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10'>Zapytaj o dostępność</div>}
       {/* image */}
         <div className='w-full h-[200px] flex item-center justify-center relative'>
-          <img className='mt-6 w-[200px] h-[200px] group-hover:scale-90 transition-all' src={`https://api-8xi3.onrender.com${product.attributes.paint.data[0].attributes.url}`} alt={product.attributes.title}></img>
+          <img className='mt-6 w-[200px] h-[200px] group-hover:scale-90 transition-all' src={product.attributes.paint.data[0].attributes.url} alt={product.attributes.title}></img>
         </div>
       {/* price */}
         <div className='px-6 pt-8 flex flex-col '>

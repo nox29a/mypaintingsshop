@@ -8,7 +8,7 @@ import AllProducts from '../components/AllProducts';
 const ForSale = () => {
   const { data } = useFetch('/obrazies?populate=*&filters[avalible]=true');
   if (!data) {
-    return <div className='h-screen flex justify-center items-center'>Loading...</div>;
+    return <div className='h-screen flex justify-center items-center'>Loading...  Maybe reload the page ;)</div>;
   }
   return (
   <div className='my-16'>

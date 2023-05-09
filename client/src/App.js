@@ -4,7 +4,6 @@ import { RouterProvider, Outlet, createBrowserRouter } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import CheckoutForm from './pages/CheckoutForm';
 import ProductsDetails from './pages/ProductDetails';
 
 import Header  from './components/Header';
@@ -27,7 +26,6 @@ const router =createBrowserRouter([
       { path: '/', element: <Home />},
       { path: '/product/:id', element: <ProductsDetails />},
       { path: '/contact/', element: <Contact />},
-      { path: '/checkoutform/', element: <CheckoutForm />},
     ],
   },
 ]);

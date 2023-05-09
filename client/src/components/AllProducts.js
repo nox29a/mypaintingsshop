@@ -9,7 +9,9 @@ import Product from './Product';
 
 const AllProducts = () => {
   const { data } = useFetch('/obrazies?populate=*');
-  
+  if (!data) {
+    return <div className='h-screen flex justify-center items-center'>Loading...</div>;
+  }
   return (
     <div id='Allproducts' className='mt-40'>
       <h2 className='text-[40px] mb-6 text-center'>Wszystkie obrazy</h2>

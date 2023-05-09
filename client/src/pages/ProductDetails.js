@@ -26,8 +26,8 @@ const ProductDetails = () => {
           },
         ],
         mode: 'payment',
-        successUrl: `http://localhost:3000`,
-        cancelUrl: `http://localhost:3000`,
+        successUrl: 'https://mypaintingsshop.vercel.app/',
+        cancelUrl: 'https://mypaintingsshop.vercel.app/',
       });
       console.warn(error.message);
     }
